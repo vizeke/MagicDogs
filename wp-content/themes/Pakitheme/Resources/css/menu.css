@@ -1,0 +1,85 @@
+body { 
+    font-family:Arial, Helvetica, Sans-Serif; 
+    font-size:12px; 
+    background-image: url(../images/paper_3/paper_3.png);
+}
+
+/* =======================================================================================================================
+    MENU
+    
+    CSS espicífico da aplicação, referente a parte de Menu do site 
+    atribui o CSS a todos os elementos dentro de <ul id="menu"> inclusive
+*/
+#menu { 
+    margin:0px; 
+    padding:0px; 
+    list-style:none; 
+    color:#fff; 
+    display:inline-block; 
+    float:left;
+    width: 100%;
+    background: url(../images/low_contrast_linen/low_contrast_linen.png) repeat scroll 0 0; 
+}
+
+#menu a { color:#fff; text-decoration:none; }
+#menu > li {
+    
+    cursor:pointer; 
+    position:relative;
+    padding:0px 10px; 
+    display:inline-table;
+    height: 50px;
+    line-height: 50px;
+    float:left;
+}
+
+#menu > li a:hover {color:#B0D730;}
+#menu .logo {
+    background: url(../images/low_contrast_linen/low_contrast_linen.png) none repeat scroll 0% 0%; 
+    padding:0px;
+    height: 50px;
+}
+
+/* sub-menus*/
+
+#menu ul { padding:0px; margin:0px; display:block; display:inline;}
+#menu li ul { 
+    position:absolute; 
+    left:-10px; 
+    top:0px; 
+    margin-top:50px; 
+    width:150px; 
+    line-height:16px; 
+    background: url(../images/low_contrast_linen/low_contrast_linen.png) repeat scroll 0 0; 
+    color:#0395CC; 
+    /* for IE */ 
+    display:none; }
+#menu li:hover ul { display:block;}
+#menu li ul li{ display:block; margin:5px 20px; padding: 5px 0px;  border-top: dotted 1px #606060; list-style-type:none; }
+#menu li ul li:first-child { border-top: none; }
+#menu li ul li a { display:block; color:#0395CC; }
+#menu li ul li a:hover { color:#7FCDFE; }
+#menu .submenu {  z-index:999;}
+
+/* main submenu */
+
+#menu #main { left:0px; top:-50px; padding-top:20px; background-color:#172322; color:#fff;}
+
+/* search */
+
+.searchContainer div { background-color:#fff; display:inline; padding:5px;}
+.searchContainer input[type="text"] {border:none;}
+.searchContainer img { vertical-align:middle; }
+.searchContainer > #searchMagnify { margin-left: -20px;}
+#menu #searchField { margin-top: 11px; }
+
+/* corners*/
+
+#menu .corner_inset_left { position:absolute; top:0px; left:-12px;}
+#menu .corner_inset_right { position:absolute; top:0px; left:150px;}
+#menu .last { background:transparent none repeat scroll 0% 0%; margin:0px; padding:0px; border:none; position:relative; border:none; height:0px;}
+#menu .corner_left { position:absolute; left:0px; top:0px;}
+#menu .corner_right { position:absolute; left:132px; top:0px;}
+#menu .middle { position:absolute; left:18px; height: 20px; width: 115px; top:0px;}
+
+/*=======================================================================================================================*/
