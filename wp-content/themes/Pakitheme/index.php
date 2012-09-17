@@ -45,7 +45,7 @@
 <div id="topMenu" class="container">
         <ul id="menu" class="borderBottom">
             <li class="logo">
-                <img style="height: 50px; width: auto;" alt="" src="<?php bloginfo('template_url'); ?>/Resources/images/logo2.png"/>
+                <img alt="" src="<?php bloginfo('template_url'); ?>/Resources/images/logo2.png"/>
                 <!--<ul id="main" class="submenu">
                     <li>Welcome to <b>Create Vimeo-like top navigation</b> tutorial!</li>
                 </ul>
